@@ -4,7 +4,7 @@ Dotenv.load
 set :application, "sample_app"
 set :repo_url, "git@github.com:seuros/capistrano-example-app.git"
 
-server ENV.fetch('TESTING_SERVER'), user: "deploy", roles: %w{app web}
+server ENV.fetch('TESTING_SERVER'), user: "deploy", roles: %w{app web worker}
 
 set :deploy_to, -> { "/home/deploy/#{fetch(:stage)}" }
 set :branch, :main
