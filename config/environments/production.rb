@@ -61,4 +61,6 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+  # This is just to make sure the app is running in production mode
+  config.secret_key_base = SecureRandom.hex(64)
 end

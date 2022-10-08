@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seuros/capistrano-puma.git
-  revision: 6d4e5e7d37f760448db099b45c26d63138865a4f
+  revision: 50d9b7e027193a8b6329c59c77add7005cab4485
   specs:
     capistrano3-puma (6.0.0.alpha.2)
       capistrano (~> 3.7)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/seuros/capistrano-sidekiq.git
-  revision: 233eebadb712c683a6b5817f622218ac15947028
+  revision: 48bf5b00b1c14ba7a1aefc6e89f1c62037f9521b
   specs:
     capistrano-sidekiq (3.0.0)
       capistrano (>= 3.9.0)
@@ -61,7 +61,7 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
-    irb (1.4.1)
+    irb (1.4.2)
       reline (>= 0.3.0)
     loofah (2.19.0)
       crass (~> 1.0.2)
@@ -97,7 +97,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     sd_notify (0.1.1)
-    sidekiq (6.5.6)
+    sidekiq (6.5.7)
       connection_pool (>= 2.2.5)
       rack (~> 2.0)
       redis (>= 4.5.0, < 5)
