@@ -22,7 +22,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano-sidekiq", require: false, github: "seuros/capistrano-sidekiq"
-  gem "capistrano3-puma", require: false, github: "seuros/capistrano-puma"
+  gem "capistrano-sidekiq", '>= 3.0.0.alpha.1', require: false
+  gem "capistrano3-puma", '>= 6.0.0.alpha.4', require: false
 end
 

@@ -1,21 +1,3 @@
-GIT
-  remote: https://github.com/seuros/capistrano-puma.git
-  revision: 50d9b7e027193a8b6329c59c77add7005cab4485
-  specs:
-    capistrano3-puma (6.0.0.alpha.2)
-      capistrano (~> 3.7)
-      capistrano-bundler
-      puma (>= 5.1, < 6.0)
-
-GIT
-  remote: https://github.com/seuros/capistrano-sidekiq.git
-  revision: 48bf5b00b1c14ba7a1aefc6e89f1c62037f9521b
-  specs:
-    capistrano-sidekiq (3.0.0)
-      capistrano (>= 3.9.0)
-      capistrano-bundler
-      sidekiq (>= 6.0.6)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +29,14 @@ GEM
       sshkit (>= 1.9.0)
     capistrano-bundler (2.1.0)
       capistrano (~> 3.1)
+    capistrano-sidekiq (3.0.0.alpha.1)
+      capistrano (>= 3.9.0)
+      capistrano-bundler
+      sidekiq (>= 6.0.6)
+    capistrano3-puma (6.0.0.alpha.4)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (>= 5.1, < 6.0)
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
     crass (1.0.6)
@@ -114,8 +104,8 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack (~> 7.0.4)
-  capistrano-sidekiq!
-  capistrano3-puma!
+  capistrano-sidekiq (>= 3.0.0.alpha.1)
+  capistrano3-puma (>= 6.0.0.alpha.4)
   debug
   dotenv-rails
   puma (~> 5.1)
