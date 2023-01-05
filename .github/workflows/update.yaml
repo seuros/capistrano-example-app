@@ -1,0 +1,24 @@
+name: Update repository
+
+on:
+  workflow_dispatch:
+  schedule:
+      - cron: '0 0 * * *'
+
+jobs:
+  updater:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v3
+      - name: Update project
+        run: bundle update
+      - name: Configure git author
+        run: |
+          git config user.name "GitHub Actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: commit
+        run: |
+          git add .
+          git commit -am "Auto updated packages" && git push || echo "No changes to commit"
