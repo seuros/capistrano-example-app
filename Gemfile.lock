@@ -96,7 +96,7 @@ GEM
       zeitwerk (~> 2.5)
     rake (13.0.6)
     redis (4.8.1)
-    reline (0.3.7)
+    reline (0.3.8)
       io-console (~> 0.5)
     sd_notify (0.1.1)
     sidekiq (6.5.9)
