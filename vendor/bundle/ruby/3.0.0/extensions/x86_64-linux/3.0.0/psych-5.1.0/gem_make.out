@@ -1,0 +1,24 @@
+current directory: /home/runner/work/capistrano-example-app/capistrano-example-app/vendor/bundle/ruby/3.0.0/gems/psych-5.1.0/ext/psych
+/opt/hostedtoolcache/Ruby/3.0.6/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.0.6/x64/lib/ruby/3.0.0 -r ./siteconf20230831-1816-yrz212.rb extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: /home/runner/work/capistrano-example-app/capistrano-example-app/vendor/bundle/ruby/3.0.0/gems/psych-5.1.0/ext/psych
+make DESTDIR\= clean
+cd libyaml && make clean
+/bin/sh: 1: cd: can't cd to libyaml
+make: [Makefile:281: clean-so] Error 2 (ignored)
+
+current directory: /home/runner/work/capistrano-example-app/capistrano-example-app/vendor/bundle/ruby/3.0.0/gems/psych-5.1.0/ext/psych
+make DESTDIR\=
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.so
+
+current directory: /home/runner/work/capistrano-example-app/capistrano-example-app/vendor/bundle/ruby/3.0.0/gems/psych-5.1.0/ext/psych
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 psych.so ./.gem.20230831-1816-ojh04k
