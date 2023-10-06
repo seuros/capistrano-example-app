@@ -104,7 +104,7 @@ GEM
     reline (0.3.9)
       io-console (~> 0.5)
     sd_notify (0.1.1)
-    sidekiq (6.5.10)
+    sidekiq (6.5.11)
       connection_pool (>= 2.2.5, < 3)
       rack (~> 2.0)
       redis (>= 4.5.0, < 5)
