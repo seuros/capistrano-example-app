@@ -4,14 +4,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem "dotenv-rails", require: "dotenv/rails-now"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-RAILS_VERSION = "~> 7.0.4"
-gem "railties", RAILS_VERSION
-gem "actionpack", RAILS_VERSION
-gem "puma", "~> 5.1"
+rails_version = "~> 7.1"
+gem "railties", rails_version
+gem "actionpack", rails_version
+gem "puma"
 group :production do
   gem "sd_notify" ## This is for systemd
 end
-gem "sidekiq", "~> 6.2"
+gem "sidekiq"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
