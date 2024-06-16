@@ -72,7 +72,7 @@ GEM
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
-    irb (1.13.1)
+    irb (1.13.2)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     loofah (2.22.0)
@@ -142,7 +142,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     webrick (1.8.1)
-    zeitwerk (2.6.15)
+    zeitwerk (2.6.16)
 
 PLATFORMS
   arm64-darwin-22
