@@ -50,7 +50,7 @@ GEM
     base64 (0.2.0)
     bigdecimal (3.1.8)
     builder (3.3.0)
-    capistrano (3.18.1)
+    capistrano (3.19.0)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
