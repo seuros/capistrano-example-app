@@ -50,7 +50,7 @@ GEM
     base64 (0.2.0)
     bigdecimal (3.1.8)
     builder (3.3.0)
-    capistrano (3.19.0)
+    capistrano (3.19.1)
       airbrussh (>= 1.0.0)
       i18n
       rake (>= 10.0.0)
@@ -96,7 +96,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.8.0)
-    rack (3.1.4)
+    rack (3.1.6)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
