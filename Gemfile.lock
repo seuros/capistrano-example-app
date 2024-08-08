@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/seuros/capistrano-puma.git
-  revision: 2cc11846540489edda10d83e026c9bea04e6fab1
+  revision: ae984079f9ff3d561898a594838a3aece5c9ca2c
   specs:
     capistrano3-puma (6.0.0.beta.1)
       capistrano (~> 3.7)
