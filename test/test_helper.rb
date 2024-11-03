@@ -51,6 +51,7 @@ ENV['RAILS_ENV'] = 'test'
 
 require_relative '../config/environment'
 
+ENV["MAXITEST_NO_INTERRUPT"] = "1"
 require 'maxitest/autorun'
 require 'rails/test_help'
 require 'minitest-spec-rails'
