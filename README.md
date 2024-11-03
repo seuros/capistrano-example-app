@@ -12,7 +12,9 @@ TESTING_SERVER2= # A second server to deploy to (optional)
 ```
 
 ```shell
-bin/cap {stage} deploy # Where stage is one of the files in config/deploy/
+bin/cap {stage} sidekiq:install # Where stage is one of the files in config/deploy/
+bin/cap {stage} puma:install
+bin/cap {stage} deploy 
 ```
 
 ## Notes
