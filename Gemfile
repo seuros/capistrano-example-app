@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "dotenv-rails", require: "dotenv/rails-now"
+gem "dotenv-rails", require: "dotenv/load"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 rails_version = "~> 7.2"
@@ -15,6 +15,8 @@ gem "sidekiq"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+
+gem "rails_app_version"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -42,7 +44,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano-sidekiq", require: false, github: "seuros/capistrano-sidekiq"
-  gem "capistrano3-puma", require: false, github: "seuros/capistrano-puma"
+  gem "capistrano-sidekiq", require: false
+  gem "capistrano3-puma", require: false
 end
 
