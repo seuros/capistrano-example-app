@@ -8,6 +8,10 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
+# Load rbenv support
+require 'capistrano/rbenv'
+require 'capistrano/bundler'
+
 require 'capistrano/sidekiq'
 install_plugin Capistrano::Sidekiq
 install_plugin Capistrano::Sidekiq::Systemd

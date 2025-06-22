@@ -44,6 +44,9 @@ group :development, :test do
 end
 
 group :development do
-  gem "capistrano-sidekiq", require: false
-  gem "capistrano3-puma", require: false
+  gem "capistrano", require: false
+  gem "capistrano-rbenv", require: false
+  gem "capistrano-bundler", require: false
+  gem "capistrano-sidekiq", path: "../capistrano-sidekiq", require: false
+  gem "capistrano3-puma", path: "../capistrano-puma", require: false
 end
