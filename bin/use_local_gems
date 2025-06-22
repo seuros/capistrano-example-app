@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Script to toggle between local and GitHub gem versions
+
+if [ "$1" = "on" ]; then
+  echo "Switching to local gem versions..."
+  export USE_LOCAL_GEMS=true
+  bundle install
+  echo "Now using local gems from parent directories"
+elif [ "$1" = "off" ]; then
+  echo "Switching to GitHub gem versions..."
+  unset USE_LOCAL_GEMS
+  bundle install
+  echo "Now using gems from GitHub"
+else
+  echo "Usage: $0 [on|off]"
+  echo "  on  - Use local development versions from parent directories"
+  echo "  off - Use GitHub versions"
+  echo ""
+  echo "Current status:"
+  if [ "$USE_LOCAL_GEMS" = "true" ]; then
+    echo "  Using LOCAL gems"
+  else
+    echo "  Using GITHUB gems"
+  fi
+fi
